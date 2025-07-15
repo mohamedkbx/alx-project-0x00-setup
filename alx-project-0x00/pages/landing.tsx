@@ -1,3 +1,4 @@
+import Button from "@/components/Button"
 import Card from "@/components/Card"
 
 const Landing: React.FC =  () => {
@@ -5,6 +6,14 @@ const Landing: React.FC =  () => {
     <div>
       <h1 className=" text-xl font-extralight">Landing Page</h1>
       <Card />
+    <Button title="Small Rounded-sm" styles="text-sm rounded-sm bg-blue-500 text-white" />
+      <Button title="Small Rounded-md" styles="text-sm rounded-md bg-green-500 text-white" />
+      <Button title="Small Rounded-full" styles="text-sm rounded-full bg-purple-500 text-white" />
+
+      {/* Medium Buttons */}
+      <Button title="Medium Rounded-sm" styles="text-base rounded-sm bg-blue-600 text-white" />
+      <Button title="Medium Rounded-md" styles="text-base rounded-md bg-green-600 text-white" />
+      <Button title="Medium Rounded-full" styles="text-base rounded-full bg-purple-600 text-white" />
 
     </div>
   )
